@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Lakki+Reddy&display=swap');
+
+body{
+    font-family: 'Kodchasan';
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 100px;
+    background-color: #162022;
+}
+
+header .navbar{
+    display: flex;
+    justify-content: c;
+}
+
+header .logo{
+    top: 10px;
+    position: relative;
+    font-family: 'Lakki Reddy';
+    color: red;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    top: -8px;
+    left: 1000px;
+    margin-left: 150px;
+    font-size: 25px;
+    transition: 0.6s;
+    text-decoration: none;
+    color: white;
+}
