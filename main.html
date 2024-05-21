@@ -8,32 +8,102 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <!-- Cari Font buat H2nya -->
-            <a href="#" class="logo">Over The Line</a>
-            <ul>
-                <li><a href="#trailerPage">Trailer</a></li>
-                <li><a href="#synopsisPage">Synopsis</a></li>
-                <li><a href="#galleryPage">Gallery</a></li>
-                <li><a href="#castPage">Cast</a></li>
-            </ul>
-        </div>
-        
-        <div id="trailerPage" class="trailer">
-            
-        </div>
-        
-        <div id="synopsisPage" class="synopsis">
-            
-        </div>
-        
-        <div id="galleryPage" class="gallery">
-            
-        </div>
-        
-        <div id="castPage" class="cast">
-            
-        </div>
+        <section class="navbar">
+            <a href="" class="logo">Over The Line</a>
+            <div class="full">
+                <a href="">Watch Full Video</a>
+            </div>
+            <div class="side">
+                <a href="#trailerPage">Trailer</a>
+                <a href="#synopsisPage">Synopsis</a>
+                <a href="#galleryPage">Gallery</a>
+                <a href="#castPage">Cast</a>
+            </div>
+        </section>
     </header>
+
+    <div id="trailerPage" class="trailer">
+        <div class="vidcon">
+            <center>
+                <video id="myVideo" width="80%" controls>
+                    <source src="Materials/tes video.mp4" type="video/mp4"/>
+                </video>
+            </center>
+            <center>
+                <div class="play-button" onclick="playPause()">
+                    <i class="play-icon">▶</i>
+                </div>
+            </center>
+        </div>
+    </div>
+    
+    <div id="synopsisPage" class="synopsis">
+        <div class="tables">
+            <table class="poster">
+                <tr>
+                    <td><img src="/Materials/poster.jpg" alt=""></td>
+                </tr>
+            </table>
+            
+            <table class="desc">
+                <tr>
+                    <th class="title">OVER THE LINE</th>
+                </tr>
+                <tr>
+                    <th>Genre</th>
+                </tr>
+                <tr>
+                    <td>Drama, Revenge, Thriller</td>
+                </tr>
+                <tr>
+                    <th>Directed By</th>
+                </tr>
+                <tr>
+                    <td>Mr.A</td>
+                </tr>
+                <tr>
+                    <th>Written By</th>
+                </tr>
+                <tr>
+                    <td>Mr.A, Mrs. A</td>
+                </tr>
+                <tr>
+                    <th>Synopsis</th>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div id="galleryPage" class="gallery">
+        <div class="galcon">
+            <div class="slider-slides">
+                <img src="/Materials/picture1.jpg" onclick="plusSlides(1)">
+            </div>
+            
+            <div class="slider-slides">
+                <img src="/Materials/picture2.jpg" onclick="plusSlides(1)">
+            </div>
+            
+            <div class="slider-slides">
+                <img src="/Materials/picture3.jpg" onclick="plusSlides(1)">
+            </div>
+        </div> 
+    </div>
+    
+    <div id="castPage" class="cast">
+        
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

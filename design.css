@@ -3,6 +3,7 @@
 
 body{
     font-family: 'Kodchasan';
+    margin: 0;
 }
 
 header{
@@ -13,14 +14,17 @@ header{
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    transition: 0.6s;
-    padding: 20px 100px;
+    user-select: none;
+    /* transition: 0.6s; */
+    padding: 20px 50px;
+    height: 35px;
     background-color: #162022;
+    z-index: 100;
 }
 
 header .navbar{
     display: flex;
-    justify-content: c;
+    width: 100%;
 }
 
 header .logo{
@@ -29,30 +33,128 @@ header .logo{
     font-family: 'Lakki Reddy';
     color: red;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.8em;
     text-transform: uppercase;
-    transition: 0.6s;
+    /* transition: 0.6s; */
 }
 
-header ul{
+header .navbar .full{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    background-color: #314048;
+    margin-left: 45px;
+    margin-right: 30px;
+    border-radius: 12px;
+}
+
+header .navbar .side{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+.side a, .full a{
+    font-family: 'Kodchasan';
+    color: white;
+    text-decoration: none;
+}
+
+.trailer {
+    margin-top: 75.5px;
+    text-align: center;
+    /* background-color: black; */
+}
+
+.vidcon {
     position: relative;
+    display: block; 
+    width: 100%;
+    padding: 30px 0;
+    background-color: #0B1216;
+    box-sizing: border-box;
+    border: 10px red;
+}
+
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px; 
+    height: 80px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-radius: 50%; 
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li{
-    position: relative;
-    list-style: none;
+.play-icon {
+    color: #fff; 
+    font-size: 48px; 
+    font-style: normal;
 }
 
-header ul li a{
-    position: relative;
-    top: -8px;
-    left: 1000px;
-    margin-left: 150px;
+
+.tables {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 17%;
+    margin-right: 16%;
+    margin-top: 5%;
+    padding: 3%;
+    background-color: #D9D9D9;
+}
+
+.poster {
+    border-collapse: collapse; 
+    border: none;
+    margin-right: 3%;
+}
+
+.poster img{
+    height: 600px;
+}
+
+.desc {
+    width: 60%;
+    border-collapse: collapse; 
+}
+
+table.desc tr th{
+    text-align: left;
+}
+
+table.desc tr th.title{
+    padding-top: 3%;
+    padding-bottom: 5%;
     font-size: 25px;
-    transition: 0.6s;
-    text-decoration: none;
-    color: white;
+}
+
+table.desc tr td{
+    padding-bottom: 4%;
+}
+
+.gallery{
+    position: relative;
+}
+
+.gallery .galcon{
+    width: 50%;
+    overflow: hidden;
+}
+
+.slider-slides{
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 30s ease-in-out infinite;
 }
