@@ -18,67 +18,17 @@ var video = document.getElementById("myVideo");
     });
 
 
-let slideIndex = 1;
-let prevSlideIndex = 1;
-showSlides(slideIndex);
+let currentIndex = 0;
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    const slider = document.querySelector('#slider figure');
+    const totalSlides = slider.children.length;
+
+    currentIndex = (currentIndex + n) % totalSlides;
+    if (currentIndex < 0) {
+        currentIndex = totalSlides - 1;
+    }
+
+    slider.style.transform = `translateX(-${currentIndex * 100 / totalSlides}%)`;
 }
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-// function showSlides(n) {
-//   let slides = document.getElementsByClassName("slides");
-  
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-
-//   // for (i = 0; i < slides.length; i++) {
-//   //   slides[i].style.display = "none";
-//   // }
-  
-//   // slides[slideIndex-1].style.display = "block";
-//   // dots[slideIndex-1].className += " active";
-
-//   // for ( let i = 0; i < slides.length; i++) {
-//   //   slides[i].classList.remove('active');
-//   // }
-
-//   // slides[slideIndex - 1].classList.add('active');
-
-//   for (let i = 0; i < slides.length; i++) {
-//     slides[i].classList.remove('active');
-//     slides[i].classList.remove('fade');
-//   }
-
-//   slides[slideIndex - 1].classList.add('active');
-//   slides[slideIndex - 1].classList.add('fade');
-// }
-
-function showSlides(n) {
-  let slides = document.getElementsByClassName("slides");
-  
-  if (n > slides.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = slides.length }
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove('active');
-    slides[i].classList.remove('slide-in');
-    slides[i].classList.remove('slide-out');
-  }
-
-  if (n > prevSlideIndex) {
-    slides[prevSlideIndex - 1].classList.add('slide-out');
-  } else {
-    slides[prevSlideIndex - 1].classList.add('prevSlide');
-    slides[prevSlideIndex].classList.remove('prevSlide');
-  }
-
-  slides[slideIndex - 1].classList.add('active');
-  slides[slideIndex - 1].classList.add('slide-in');
-
-  prevSlideIndex = slideIndex;
-}
+    

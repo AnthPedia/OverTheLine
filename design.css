@@ -106,10 +106,10 @@ header .navbar .side{
 .tables {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 17%;
+    margin-left: 16%;
     margin-right: 16%;
     margin-top: 5%;
-    padding: 3%;
+    padding: 3% 3% 3% 4%;
     background-color: #D9D9D9;
 }
 
@@ -142,19 +142,83 @@ table.desc tr td{
     padding-bottom: 4%;
 }
 
-.gallery{
+.gallery {
     position: relative;
-}
-
-.gallery .galcon{
-    width: 50%;
+    width: 60%;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    left: 20%;
+    right: 20%;
 }
 
-.slider-slides{
-    display: grid;
-    grid-template-columns: repeat(3,100%);
-    height: 100%;
+#slider{
+    overflow: hidden;
     width: 100%;
-    animation: slider 30s ease-in-out infinite;
+}
+
+#slider figure{
+    position: relative;
+    width: 300%;
+    margin: 0;
+    left: 0;
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+#slider figure img {
+    width: 33.33%; 
+    flex-shrink: 0;
+    cursor: pointer;
+    object-fit: cover;
+    height: auto;
+}
+
+.cast h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1% 0%;
+    font-size: 100px;
+    font-family: 'Kodchasan';
+    margin-top: 5%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bulet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer {
+    text-align: center;
+    background-color: #D9D9D9;
+    padding: 1% 0%;
+    font-size: 15px;
+    font-family: 'Kodchasan';
+    margin-top: 3%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
