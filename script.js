@@ -31,4 +31,8 @@ function plusSlides(n) {
 
     slider.style.transform = `translateX(-${currentIndex * 100 / totalSlides}%)`;
 }
-    
+
+function toggleMenu() {
+    const sideMenu = document.querySelector('.side');
+    sideMenu.classList.toggle('active');
+}
