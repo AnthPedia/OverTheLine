@@ -88,7 +88,7 @@ header .burger-menu {
 }
 
 .trailer {
-    margin-top: 75.5px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -206,6 +206,10 @@ table.desc tr td {
     margin-top: 5%;
 }
 
+.cast {
+    user-select: none;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr); 
@@ -236,6 +240,7 @@ footer {
     font-size: 15px;
     font-family: 'Kodchasan';
     margin-top: 3%;
+    user-select: none;
 }
 
 html {
@@ -281,6 +286,7 @@ html {
 
     header .navbar .full {
         margin: 0 auto;
+        align-items: center;
     }
 
     header .navbar .side {
@@ -306,7 +312,7 @@ html {
     }
 
     .trailer {
-        margin-top: 70px;
+        margin-top: 69.5px;
     }
 
     .synopsis {
