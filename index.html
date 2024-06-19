@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over The Line</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <header>
+        <section class="navbar">
+            <a href="#" class="logo">Over The Line</a>
+            <div class="full">
+                <a href="#">Watch Full Video</a>
+            </div>
+            <div class="burger-menu" onclick="toggleMenu()">&#9776;</div>
+            <div class="side">
+                <a href="#trailerPage">Trailer</a>
+                <a href="#synopsisPage">Synopsis</a>
+                <a href="#galleryPage">Gallery</a>
+                <a href="#castPage">Cast</a>
+            </div>
+        </section>
+    </header>
+
+    <div id="trailerPage" class="trailer">
+        <div class="vidcon">
+            <center>
+                <video id="myVideo" width="80%" controls>
+                    <source src="Materials/tes video.mp4" type="video/mp4"/>
+                </video>
+            </center>
+            <center>
+                <div class="play-button" onclick="playPause()">
+                    <i class="play-icon">▶</i>
+                </div>
+            </center>
+        </div>
+    </div>
+    
+    <div id="synopsisPage" class="synopsis">
+        <div class="tables">
+            <table class="poster">
+                <tr>
+                    <td><img src="/Materials/poster.jpg" alt=""></td>
+                </tr>
+            </table>
+            
+            <table class="desc">
+                <tr>
+                    <th class="title">OVER THE LINE</th>
+                </tr>
+                <tr>
+                    <th>Genre</th>
+                </tr>
+                <tr>
+                    <td>Drama, Revenge, Thriller</td>
+                </tr>
+                <tr>
+                    <th>Directed By</th>
+                </tr>
+                <tr>
+                    <td>Mr.A</td>
+                </tr>
+                <tr>
+                    <th>Written By</th>
+                </tr>
+                <tr>
+                    <td>Mr.A, Mrs. A</td>
+                </tr>
+                <tr>
+                    <th>Synopsis</th>
+                </tr>
+                <tr>
+                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+    <div id="galleryPage" class="gallery">
+        <div id="slider">
+            <figure>
+                <img src="/Materials/picture1.jpg" onclick="plusSlides(1)">
+                <img src="/Materials/picture2.jpg" onclick="plusSlides(1)">
+                <img src="/Materials/picture3.jpg" onclick="plusSlides(1)">
+            </figure>
+        </div> 
+    </div>
+    
+    <div id="castPage" class="cast">
+        <h1>Cast</h1>
+        <div class="container">
+            <div class="bulet">
+                <img src="/Materials/kepin.jpg" alt="Person 1" class="circle-image">
+                <p>Kevin Alexander Andreas <br>as <br>Boss</p>
+            </div>
+            <div class="bulet">
+                <img src="/Materials/kepin.jpg" alt="Person 1" class="circle-image">
+                <p>Antony Laurence Cornelis <br>as <br>Victim 2</p>
+            </div>
+            <div class="bulet">
+                <img src="/Materials/kepin.jpg" alt="Person 1" class="circle-image">
+                <p>Timothy Paendong <br>as <br>Parent</p>
+            </div>
+            <div class="bulet">
+                <img src="/Materials/kepin.jpg" alt="Person 1" class="circle-image">
+                <p>Kent Christopher Hansel <br>as <br>Parent</p>
+            </div>
+            <div class="bulet">
+                <img src="/Materials/kepin.jpg" alt="Person 1" class="circle-image">
+                <p>Geovanka Thersia Kurniawan <br>as <br>Bully</p>
+            </div>
+            <div class="bulet">
+                <img src="/Materials/kepin.jpg" alt="Person 1" class="circle-image">
+                <p>Luke Mangala Soegianto <br>as <br>Victim 1</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 by Group 3 Productions</p>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
